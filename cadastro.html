@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Login</title>
+</head>
+<body>
+    <header></header>
+    <section class="full-banner-form">
+        <div class="container-login">
+            <form action="cadastro2.php" method="post" class="form-login">
+                <h1>Cadastro</h1>
+                <label for="name">
+                    Nome
+                    <input type="text" name="name"  placeholder="Digite seu nome"  id="name" required 
+                    oninvalid="this.setCustomValidity('O Campo nome é obrigatório')"
+                    oninput="this.setCustomValidity('')"/>
+                </label>
+                <label for="email">
+                    Email
+                    <input type="email" name="email" placeholder="Digite seu email" id="email" required
+                    oninvalid="this.setCustomValidity('O Campo email é obrigatório')"
+                    oninput="this.setCustomValidity('')"/>
+                </label>
+                <label for="password">
+                    Senha
+                    <input type="password" name="password" placeholder="Digite a senha" id="password" required
+                    oninvalid="this.setCustomValidity('O Campo senha é obrigatório')"
+                    oninput="this.setCustomValidity('')"/>
+                </label>
+                <label for="password">
+                    Confirme a senha
+                    <input type="password" name="password-c" placeholder="Confirme a senha" id="password" required
+                    oninvalid="this.setCustomValidity('O Campo Confirme a senha é obrigatório')"
+                    oninput="this.setCustomValidity('')"/>
+                </label>
+
+                <button type="submit">Continuar</button>
+                <p><a href="#">Esqueci a senha</a></p>
+                <p><a href="#">Ainda não sou cadastrado(a)</a></p>
+            </form>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
